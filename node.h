@@ -8,8 +8,12 @@ struct Node {
     Node<T>* prev;
 
     void killSelf() {
-        // TODO
+	  delete next;
+	  delete prev;
+	  delete this;
     }
+
+	Node(T val) : data(val), next(nullptr), prev(nullptr) { }
 };
 
 #endif

@@ -4,10 +4,10 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    cout << "===========================================================" << endl;
-    cout << "\tLists Practice" << endl;
-    cout << "===========================================================" << endl << endl;
+  cout << "===========================================================" << endl;
+  cout << "\tLists Practice" << endl;
+  cout << "===========================================================" << endl << endl;
 
-    Tester::execute();
-    return EXIT_SUCCESS;
+  Tester::execute();
+  return EXIT_SUCCESS;
 }
