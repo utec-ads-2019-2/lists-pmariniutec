@@ -73,6 +73,7 @@ class ForwardList : public List<T> {
 	}
 
 	T operator[](int index) {
+		// Falta controlar el caso que el índice sea mayor al tamaño
 	  auto curr = this->head;
 	  for (int i = 0; i < index; ++i) {
 		curr = curr->next; 
@@ -90,6 +91,7 @@ class ForwardList : public List<T> {
 
 	void clear() {
 	  auto curr = this->head;
+	  // Si uso esta función en una lista vacía, va a dar error
 	  while (curr->next != nullptr) {
 		auto tmp = curr;
 		curr = curr->next;
@@ -164,6 +166,7 @@ class ForwardList : public List<T> {
 	}
 
 	ForwardIterator<T> end() {
+		// Suele ser el siguiente de tail
 	  return { this->tail };
 	}
 };
